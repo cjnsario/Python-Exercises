@@ -37,6 +37,9 @@ if player_input >= 3 and player_input < 0:
 graphics = [rock, paper, scissors]
 computer_choice = random.randint(0, 2)
 
+print(f"You picked: {graphics[player_input]}")
+print(f"Computer Picked: {graphics[computer_choice]}")
+
 if player_input == computer_choice:
     print("Draw")
 elif player_input == 0 and computer_choice == 1:
@@ -47,6 +50,4 @@ elif player_input == 2 and computer_choice == 0:
     print("You Lose")
 else:
     print("You Win")
-    
-print(f"You picked: {graphics[player_input]}")
-print(f"Computer Picked: {graphics[computer_choice]}")
+
