@@ -15,3 +15,14 @@ for score in student_scores:
 
 print(f"The highest score is {highest_score}")
 
+# Code for minumum/lowest number
+"""
+lowest_score = 0
+for score in student_scores:
+  if score < lowest_score:
+    lowest_score = score
+  else:
+    lowest_score = lowest_score
+
+print(f"The highest score is {lowest_score}")
+"""
