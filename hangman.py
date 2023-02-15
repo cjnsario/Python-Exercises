@@ -83,6 +83,9 @@ end_of_game = False
 while end_of_game == False:
     guess = input("Guess a letter: ").lower()
 
+    if guess in blank_word:
+        print(f"You've already guessed {guess}")
+
     for u in range(word_length):
         letter = random_word[u]
         if letter == guess: 
